@@ -1,0 +1,7 @@
+cert/*
+xml_signed/*
+xml_unsigned/*
+
+!cert/.gitkeep
+!xml_signed/.gitkeep
+!xml_unsigned/.gitkeep

@@ -1,0 +1,23 @@
+{
+    "name": "edwinjuarezpe/cr-mh-sdk",
+    "description": "SDK for Costa Rica's tax e-invoicing (MH): XAdES signing, submission, and status queries.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "EdwinJuarez\\Mh\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Edwin Juarez",
+            "email": "edwinjuarez24x@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "ext-dom": "*",
+        "ext-libxml": "*",
+        "ext-openssl": "*"
+    }
+}
