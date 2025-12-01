@@ -77,11 +77,9 @@ composer require edwinjuarezpe/cr-mh-sdk
 
 ---
 
-# 🧩 Uso
+## 🧩 Uso
 
----
-
-# 1️⃣ Firmar XML – XAdES-EPES
+### 1️⃣ Firmar XML – XAdES-EPES
 
 ### ✔ Firmar **archivo** XML
 
@@ -109,7 +107,7 @@ $signed = $signer->sign($certPath, $certPassword, $xml);
 
 ---
 
-# 2️⃣ Enviar XML firmado a Hacienda
+### 2️⃣ Enviar XML firmado a Hacienda
 
 ```php
 use EdwinJuarez\Mh\Mh;
@@ -148,7 +146,7 @@ echo "Clave: {$ack->clave}\n";
 
 ---
 
-# 3️⃣ Consultar estado por clave
+### 3️⃣ Consultar estado por clave
 
 ```php
 $st = $client->statusByClave($ack->clave);
@@ -166,7 +164,7 @@ if ($st->acuseXmlBase64) {
 
 ---
 
-# 🗃 Opcional: Usar FileTokenStore (persistente)
+### 🗃 Opcional: Usar FileTokenStore (persistente)
 
 ```php
 use EdwinJuarez\Mh\Config\StoragePathResolver;
@@ -184,27 +182,27 @@ $client = Mh::clientWithPassword($settings, $store);
 
 ---
 
-# 📚 Documentación oficial MH
+## 📚 Documentación oficial MH
 
-* Anexos y Estructuras
+* Anexos y Estructuras:  
   [https://atv.hacienda.go.cr/ATV/ComprobanteElectronico/frmAnexosyEstructuras.aspx](https://atv.hacienda.go.cr/ATV/ComprobanteElectronico/frmAnexosyEstructuras.aspx)
 
----
+
 ## Licencia
 [MIT](https://opensource.org/license/mit)
 
----
-# 🧑‍💻 Autor
 
-**Edwin Juarez C.**
-🌐 [https://www.edwin-juarez.com](https://www.edwin-juarez.com)
+## 🧑‍💻 Autor
+
+**Edwin Juarez C.**  
+🌐 [https://www.edwin-juarez.com](https://www.edwin-juarez.com)  
 💼 [https://linkedin.com/in/edwin-juarez-c-7018681b9](https://linkedin.com/in/edwin-juarez-c-7018681b9)
 
 ---
 
-# ☕ Donación
+## ☕ Donación
 
-Si este proyecto te ayuda, puedes invitarme un café:
+Si este proyecto te ayuda, puedes invitarme un café:  
 **PayPal:** `edwinjuarez24x@gmail.com`
 
----
+
